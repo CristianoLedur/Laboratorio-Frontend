@@ -1,0 +1,211 @@
+body, html {
+  background-color: #464646;
+  height: -webkit-fill-available;
+  margin: 0;
+}
+
+p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+
+  font-size: 13px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: #fbfbfb;
+}
+
+#content {
+  margin:20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  border-radius: 15px;
+}
+
+#content-images, #lake, #coffee-alone, #coffee-with-friends, #man-on-the-mountain, #bikers,#couple, #trekking{
+  width: 100%;
+  height: 100%
+}
+
+img:hover {
+  transform: scale(1.05); /* aumenta a imagem em 5% */
+  opacity: 0.5;
+}
+@media screen and (min-width: 0px) {
+  
+  p {
+    font-size: 2rem;
+  }
+
+  #content-images {
+    box-sizing: border-box;
+    width: 80%;
+    height: webkit-fill-available;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 1fr 2fr 2fr 3fr 3fr;
+  }
+
+  #coffee-alone {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #coffee-with-friends {
+    display: grid;
+    grid-column:1/2;
+    grid-row: 2/3;
+  }
+  
+  #lake{
+    display: grid;
+    grid-column:1/2;
+    grid-row: 3/4;
+  }
+
+  #man-on-the-mountain {
+    display: grid;
+    grid-column:1/2;
+    grid-row: 4/5;
+  }
+
+  #bikers {
+    display: grid;
+    grid-column:1/2;
+    grid-row: 5/6;
+  }
+  #trekking {
+    display: grid;
+    grid-column:1/2;
+    grid-row: 6/7;
+  }
+
+  #couple {
+    display: grid;
+    grid-column:1/2;
+    grid-row: 7/8;
+  }
+  
+}
+@media screen and (min-width: 600px) { 
+  p {
+    font-size: 2.5rem;
+  }
+
+  #content-images {
+    box-sizing: border-box;
+    width: 600px;
+    height: 1000px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 2fr;
+  }
+
+  #coffee-alone {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #coffee-with-friends {
+    display: grid;
+    grid-column:2/3;
+    grid-row: 1/2;
+  }
+  
+  #lake{
+    display: grid;
+    grid-column:1/3;
+    grid-row: 2/3;
+  }
+
+  #man-on-the-mountain {
+    display: grid;
+    grid-column:1/2;
+    grid-row: 3/4;
+  }
+
+  #bikers {
+    display: grid;
+    grid-column:2/3;
+    grid-row: 3/4;
+  }
+  #trekking {
+    display: grid;
+    grid-column:2/3;
+    grid-row: 4/5;
+  }
+
+  #couple {
+    display: grid;
+    grid-column:1/2;
+    grid-row: 4/5;
+  }
+  
+}
+
+@media screen and (min-width: 992px) {
+  body, html {
+    overflow: hidden;
+  }
+  p {
+    font-size: 3rem;
+  }
+
+  #content-images {
+    box-sizing: border-box;
+    width: 992px;
+    height: 80vh;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  #coffee-alone {
+    display: grid;
+    grid-column: 1/1;
+    grid-row: 1/4;
+  }
+
+  #lake{ 
+    display: grid;
+    grid-column:2/4;
+    grid-row: 1/3;
+  }
+
+  #coffee-with-friends {
+    display: grid;
+    grid-column:4/6;
+    grid-row: 1/4;
+  }
+
+  #man-on-the-mountain {
+    display: grid;
+    grid-column:1/2;
+    grid-row: 4/6;
+  }
+
+  #bikers {
+    display: grid;
+    grid-column:4/6;
+    grid-row: 4/6;
+  }
+  #trekking {
+    display: grid;
+    grid-column:3/4;
+    grid-row: 3/6;
+  }
+
+  #couple {
+    display: grid;
+    grid-column:2/3;
+    grid-row: 3/6;
+  }
+}
