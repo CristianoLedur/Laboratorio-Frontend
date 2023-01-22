@@ -23,7 +23,7 @@ html, body, main {
 }
 
 #info__players {
-  width: 35%;
+  width: 600px;
   height: 100%;
   color: #FCA313;
   display: flex;
@@ -46,7 +46,7 @@ button {
   color:#000;
   background-color: #FCA313;
   border-radius: 10px;
-  width: 35%;
+  width: 200px;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -95,36 +95,72 @@ button {
   align-items: center;
 }
 
+#result__box {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
 #result__box p, span {
   font-size: 1.8rem;
   font-weight: 600;
   color: #FCA313;
   text-decoration: underline;
 }
-
-@media screen and (max-width: 500px) {
+#tie {
+  text-align: center;
+}
+#reset {
+  width: 100%;
+  margin: 20px auto 0;
+}
+@media screen and (max-width: 992px) {
   #info a{
-    margin: 25px 0;
-    text-decoration: none;
-    color: #FCA313;
-    font-size: 2rem;
-    font-weight: 800;
+    font-size: 2.5rem;
+  }
+
+  #info__players {
+    width: 400px;
+  }
+
+  #start {
+    width:250px;
+    font-size: 1.5rem;
   }
 
   #table {
     height: 60%;
     width: 80%;
     margin: 2% auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+
+  #result__box p, span {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #info a{
+    font-size: 2rem;
+  }
+
+  #info__players {
+    width: 80%;
+  }
+
+  #start {
+    width:70%;
+    font-size: 1.2rem;
+  }
+
+  #table {
+    height: 60%;
+    width: 80%;
+    margin: 2% auto;
   }
 
   #result__box p, span {
     font-size: 1.3rem;
-    font-weight: 600;
-    color: #FCA313;
-    text-decoration: underline;
   }
+
 }
 

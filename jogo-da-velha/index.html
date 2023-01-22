@@ -15,11 +15,11 @@
     <section class="column" id="info">
       <a href="" >Jogo da velha</a>
       <div id="info__players">
-        <label for="player1">Player 1</label>
+        <label for="player1">Player 1 &#8594; &#11093;</label>
         <input class="input" id="player1" type="text"/>
-        <label for="player2">Player 2</label>
+        <label for="player2">Player 2 &#8594; &#10060;</label>
         <input class="input" id="player2" type="text"/>
-        <button onclick="start()">Iniciar jogo</button>
+        <button id="start" onclick="start()">Iniciar jogo</button>
       </div>
     </section>
     <section class="column" id="table" style="display: none;">
@@ -37,7 +37,9 @@
     </section>
     <section class="column" id="result" style="display: none;">
       <div id="result__box">
-        <p id="result__text"><span id="winner"></span> foi o vencedor!</p>
+        <span id="tie" style="display:none">Empatou</span>
+        <p id="result__text" style="display:none"><span id="winner"></span> foi o vencedor!</p>
+        <button id="reset" onclick="reload()">Jogar de novo</button>
       </div>
     </section>
   </main>

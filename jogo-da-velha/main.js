@@ -5,11 +5,13 @@ let currentPlayer = 1;
 let resultados = [['1','2','3'],['4','5','6'],['7','8','9'],['1','4','7'],['2','5','8'],['3','6','9'],['1','5','9'],['3','5','7']];
 let condicao = false;
 let winner = "";
+let jogadas = 0;
 
 var parent = document.querySelector("#box");
 parent.addEventListener("click", (event) => {
   if(event.target.matches(".box__table")) {
     var i = event.target.getAttribute("data-index");
+    jogadas++;
     if((currentPlayer === 1) && (listPlayer1.indexOf(i) === -1)) {
       listPlayer1.push(i);
       var img = document.createElement('img');
@@ -57,10 +59,18 @@ function validaLista(list) {
       } else {
         winner = players[1];
       }
-    }
+    } 
   });
   if(condicao) {
     document.getElementById("result").style.display = "flex";
+    document.getElementById("result__text").style.display = "block";
     document.getElementById("winner").textContent = winner;
+  } else if(!condicao && jogadas === 9) {
+    document.getElementById("result").style.display = "flex";
+    document.getElementById("tie").style.display = "block";
   }
+}
+
+function reload() {
+  window.location.reload(false);
 }
