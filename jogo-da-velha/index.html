@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da velha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="column" id="info">
+      <a href="" >Jogo da velha</a>
+      <div id="info__players">
+        <label for="player1">Player 1</label>
+        <input class="input" id="player1" type="text"/>
+        <label for="player2">Player 2</label>
+        <input class="input" id="player2" type="text"/>
+        <button onclick="start()">Iniciar jogo</button>
+      </div>
+    </section>
+    <section class="column" id="table" style="display: none;">
+      <div id="box">
+        <div class="box__table" id="bloco1" data-index="1"></div>
+        <div class="box__table" id="bloco2" data-index="2"></div>
+        <div class="box__table" id="bloco3" data-index="3"></div>
+        <div class="box__table" id="bloco4" data-index="4"></div>
+        <div class="box__table" id="bloco5" data-index="5"></div>
+        <div class="box__table" id="bloco6" data-index="6"></div>
+        <div class="box__table" id="bloco7" data-index="7"></div>
+        <div class="box__table" id="bloco8" data-index="8"></div>
+        <div class="box__table" id="bloco9" data-index="9"></div>
+      </div>
+    </section>
+    <section class="column" id="result" style="display: none;">
+      <div id="result__box">
+        <p id="result__text"><span id="winner"></span> foi o vencedor!</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

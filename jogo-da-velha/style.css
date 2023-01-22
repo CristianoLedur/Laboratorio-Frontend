@@ -1,0 +1,130 @@
+html, body, main {
+  width: 100vw;
+  background-color: #13213C;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+#info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#info a{
+  margin: 25px 0;
+  text-decoration: none;
+  color: #FCA313;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+#info__players {
+  width: 35%;
+  height: 100%;
+  color: #FCA313;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+label, input {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+label, input {
+  margin-top: 10px;
+}
+
+button {
+  height: 3rem;
+  margin: 30px auto;
+  color:#000;
+  background-color: #FCA313;
+  border-radius: 10px;
+  width: 35%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#table {
+  height: 60%;
+  width: 40%;
+  margin: 2% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box__table {
+  width: 32%;
+  height: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bloco5{
+  border: solid 3px #FCA313;
+}
+#bloco4, #bloco6 {
+  border-bottom: solid 3px #FCA313;
+  border-top: solid 3px #FCA313;
+}
+
+#bloco2, #bloco8 {
+  border-right: solid 3px #FCA313;
+  border-left: solid 3px #FCA313;
+}
+#result {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#result__box p, span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #FCA313;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+  #info a{
+    margin: 25px 0;
+    text-decoration: none;
+    color: #FCA313;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  #table {
+    height: 60%;
+    width: 80%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #result__box p, span {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #FCA313;
+    text-decoration: underline;
+  }
+}
+
