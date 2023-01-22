@@ -10,7 +10,7 @@ Fazer um jogo da velha usando flexbox para organizar os elementos na tela. Utili
 
 ## 🚀 Acessando a interface
 
-Para acessar o projeto, basta [clicar aqui](spiteful-steam.surge.sh)
+Para acessar o projeto, basta [clicar aqui](https://spiteful-steam.surge.sh/)
 
 > Projeto disponivel no link acima até 16/05/2023.
 
