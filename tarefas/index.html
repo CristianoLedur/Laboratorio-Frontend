@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarefas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="column">
+      <div id="create__tarefa">
+        <h1 id="create__tarefa__title">Tarefas</h1>
+        <label for="create__tarefa__input" id="create__tarefa__label">Adicionar tarefa:</label>
+        <input type="text" id="create__tarefa__input" maxlength="50">
+        <button id="create__tarefa__button" onclick="addTarefa()">OK</button>
+      </div>
+    </section>
+    <section class="column" style="display:none">
+      <div id="tarefas__to-do">
+        <h2 id="tarefas__to-do__sub-title">To-do</h2>
+        <div id="tarefas__to-do__set-tarefas">
+          <ul>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="column" style="display:none">
+      <div id="edit-to-do">
+        <button id="edit-to-do__button-romove" onclick="removerItens()">Remover da lista</button>
+        <button id="edit-to-do__button-clear" onclick="limparTarefas()">Limpar lista</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
