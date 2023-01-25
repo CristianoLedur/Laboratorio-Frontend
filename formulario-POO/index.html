@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário - POO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/validacoes.js"></script>
+  <script src="js/usuario.js"></script>
+</head>
+<body>
+  <main>
+    <section>
+      <div class="column box-1">
+        <h1 class="title">Learn to code by watching others</h1>
+        <p class="description">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. 
+        </p>
+      </div>
+      <div class="column box-2">
+        <div class="box-roxo">
+          <p>
+            <span>Try it free 7 days</span> then $20/mo. thereafter
+          </p>
+        </div>
+        <form class="formulario">
+          <div class="test">
+            <input type="text" id="first-name" class="erro-input" placeholder="First Name" />
+            <i class="icon-erro"></i>
+            <span class="erro" id="erro-first-name">First Name cannot be empty</span>
+          </div>
+          <div class="test">
+            <input type="text" id="last-name" class="erro-input" placeholder="Last Name" />
+            <i class="icon-erro"></i>
+            <span class="erro" id="erro-last-name">Last Name cannot be empty</span>
+          </div>
+          <div class="test">
+            <input type="email" id="email" class="erro-input" placeholder="Email Address" />
+          <i class="icon-erro"></i>
+          <span class="erro" id="erro-email">Looks like this is not an email</span>
+          </div>
+          <div class="test">
+            <input type="password" id="password" class="erro-input" placeholder="Password" />
+            <i class="icon-erro"></i>
+            <span class="erro" id="erro-password">Password cannot be empty</span>
+          </div>
+          <button type="submit" id="button">Claim your free trial</button>
+          <p>
+            By clicking the button, you are agreeing to our <span>Terms and Services</span>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

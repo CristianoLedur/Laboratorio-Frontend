@@ -1,0 +1,211 @@
+:root {
+  --primary-color-red: hsl(0, 100%, 74%);
+  --primary-color-green: hsl(154, 59%, 51%);
+  --accent-color-purple: hsl(248, 32%, 49%);
+  --neutral-color-darkBlue: hsl(240, 1%, 42%);
+  --neutral-color-grayishBlue: hsl(0, 0%, 81%);
+}
+
+html, body, main {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-color-red);
+  background-image: url('assets/bg-intro-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.box-1 {
+  margin: 80px 15px 60px;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.description {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+}
+
+.box-2 {
+  margin: 0 15px 80px;
+}
+
+.box-roxo {
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--accent-color-purple);
+  border-radius: 12px;
+  width: 100%;
+  height: 90px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-roxo p {
+  width: 60%;
+  text-align: center;
+  line-height: 1.5rem;
+  color: var(--neutral-color-grayishBlue);
+  font-weight: 300;
+}
+.box-roxo p span {
+  color: #fff;
+  font-weight: 700;
+}
+
+.formulario {
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.formulario input{
+  padding: 0;
+  border-radius: 5px;
+  border: solid 1px var(--neutral-color-darkBlue);
+  width: 100%;
+  height: 3rem;
+  margin-top: 15px;
+  color: var(--neutral-color-darkBlue);
+
+  font-weight: 600;
+  text-indent: 15px;
+}
+.test {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.icon-erro {
+  display: none;
+  background-image: url('assets/erro.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: absolute;
+  right: 14px;
+  bottom: 26px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+
+.erro {
+  display: none;
+  width: 100%;
+  text-align: right;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+#button {
+  padding:0;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--primary-color-green);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  margin-top: 15px;
+
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.formulario p {
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--neutral-color-grayishBlue);
+  width: 80%;
+  margin: 15px auto 0;
+}
+
+.formulario span {
+  color: var(--primary-color-red);
+}
+
+@media screen and (min-width: 730px) {
+  html, body, main {
+    background-image: url('/formulario-POO/assets/bg-intro-desktop.png');
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  section {
+    width: 100%;
+    display: flex;
+    gap:50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    margin:0;
+    margin-bottom: 25px;
+    line-height: 3.8rem;
+    font-size: 3.4rem;
+    text-align: left;
+  }
+
+  .description {
+    margin: 0;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .box-1, .box-2 {
+    margin: 0;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-roxo {
+    height: 60px;
+  }
+
+  .formulario {
+    width: 90%;
+  }
+
+  .formulario input{
+    margin-top: 20px;
+    height: 3.5rem;
+    text-indent: 20px;
+  }
+
+  .erro {
+    font-size: 0.85rem;
+    margin-top: 6px;
+  }
+
+  .icon-erro {
+    bottom: 30px;
+    width: 25px;
+    height: 25px;
+  }
+
+  #button {
+    height: 3.5rem;
+  }
+
+}
