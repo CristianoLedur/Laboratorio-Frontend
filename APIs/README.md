@@ -1,10 +1,12 @@
-# JSON - Exercícios
+# APIs - Exercícios
 
 ## Proposta do projeto
 
-Resolver uma série de exercícios afim de compreender JSON(JavasSript Object Notation). 
+Resolver uma série de exercícios afim de compreender JSON(JavasSript Object Notation) e APIs(Application Programming Interface). 
 
-> Em um primeiro momento estarei praticando somente com arquivos '.js', na medida em que avanço na complexidade do conteúdo, estarei criando pastas para exercícos aos quais utilizarei eventos do DOM para manipular dados entre arquivos '.html' e '.js'.
+## 🚀 Acessando as interfaces
+
+[exercicio02](https://hurt-arch.surge.sh/)
 
 ## 📝 Licença
 
