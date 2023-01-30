@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Grande Muralha da China",
+    "img": "./assets/The_Great_Wall_of_China.png",
+    "text": "A Grande Muralha da China é uma série de fortificações construídas ao longo da fronteira norte da China para proteger o país de invasores. É visível do espaço e é uma das 7 maravilhas do mundo antigo."
+  },
+  {
+    "title": "Taj Mahal",
+    "img": "./assets/The_taj_mahal_india.png",
+    "text": "Taj Mahal é um mausoléu na Índia construído pelo imperador Shah Jahan em homenagem à sua esposa falecida. É considerado uma das maiores obras-primas da arquitetura islâmica e é uma das 7 maravilhas do mundo moderno."
+  },
+  {
+    "title": "Coliseu",
+    "img": "./assets/The_Colosseum_Rome_italy.png",
+    "text": "Coliseu é um anfiteatro romano construído no século 1 d.C. É o maior anfiteatro já construído e é famoso por ser usado para jogos e eventos públicos, incluindo gladiadores. É considerado uma das maiores obras-primas da arquitetura romana e é uma das 7 maravilhas do mundo antigo."
+  },
+  {
+    "title": "Cristo Redentor",
+    "img": "./assets/Christ_the_Redeemer.png",
+    "text": "Cristo Redentor é uma estátua de Jesus Cristo localizada no Rio de Janeiro, Brasil. É uma das 7 maravilhas do mundo moderno. É um símbolo de fé e esperança para muitas pessoas."
+  },
+  {
+    "title": "Machu Picchu",
+    "img": "./assets/Machu_picchu_peru.png",
+    "text": "Machu Picchu é uma cidade Inca antiga, patrimônio mundial da UNESCO e um dos destinos turísticos mais populares do Peru. É uma das 7 maravilhas do mundo moderno."
+  },
+  {
+    "title": "Chichén Itzá",
+    "img": "./assets/Chichen_itza_mexico.png",
+    "text": "Chichén Itzá é uma antiga cidade maia, famosa por suas construções arqueológicas, incluindo o Templo da Serpente Esculpida e o Castelo. É uma das 7 maravilhas do mundo moderno."
+  },
+  {
+    "title": "Petra",
+    "img": "./assets/Petra_Jordan.webp",
+    "text": "Petra é uma cidade antiga na Jordânia, famosa por sua arquitetura elaborada esculpida na rocha. Patrimônio Mundial da UNESCO."
+  }
+]

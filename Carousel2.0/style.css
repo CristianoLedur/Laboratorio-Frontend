@@ -1,0 +1,173 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: bisque;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    color: tomato;
+}
+
+header h1{
+    margin-bottom: 10px;
+}
+
+.carousel {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.button {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid tomato;
+}
+
+.boxes {
+    width:25%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: tomato;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.boxes img {
+    width: 70%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.boxes h3 {
+    font-size: 1.2rem;
+    margin: 10px auto;
+}
+
+.boxes p {
+    margin: 0;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+
+.fa-arrow-left {
+    background-image: url('assets/seta-esquerda.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-55%, -50%);
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.fa-arrow-right {
+    background-image: url('assets/seta-direita.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-45%, -50%);
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+img {
+    width: 80%;
+}
+
+@media screen and (max-width:700px) {
+    html, body {
+        overflow: scroll;
+    }
+    header h1{
+        margin-bottom: 10px;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        gap: 0;
+    }
+
+    .button {
+        height: 25px;
+        width: 25px;
+    }
+
+    .fa-arrow-left {
+        width: 15px;
+        height: 15px;
+    }
+
+    .fa-arrow-right {
+        width: 15px;
+        height: 15px;
+    }
+    .box {
+        width: 80%;
+    }
+    #box-1 {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: tomato;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 auto 10px;
+    }
+    #box-2, #box-3 {
+        display:none;
+    }
+
+    .boxes img {
+        width: 80%;
+        height: 80%;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    .boxes h3 {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1rem;
+        margin: 10px auto;
+    }
+
+    .boxes p {
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 0.7rem;
+        text-align: justify;
+    }
+}
