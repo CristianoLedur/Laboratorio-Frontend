@@ -1,0 +1,131 @@
+* {
+  font-family: Arrial, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  background: #023A56;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+}
+#cards {
+  height: 70%;
+}
+
+.title {
+  color: #EB9D02;
+  text-align: center;
+  box-sizing: border-box;
+  height: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.grid {
+  box-sizing: border-box;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-box {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.front-card, .back-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: solid 5px #EB9D02;
+  border-radius: 20px;
+}
+
+.front-card {
+  background: #F5CB58;
+}
+
+.back-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EB9D02;
+  transform: rotateY(180deg);
+}
+
+.back-card img {
+  height: 70%;
+}
+
+#reload-button {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+#reset {
+  height: 3rem;
+  width: 200px;
+  color:#000;
+  background-color: #FCA313;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 450px) {
+  .grid {
+    height: 100%;
+    width: 70%;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .title {
+    color: #EB9D02;
+    text-align: center;
+    box-sizing: border-box;
+    height: 10%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  
+  .grid {
+    height: 100%;
+    width: 65%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .grid-box {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+  }
+}
