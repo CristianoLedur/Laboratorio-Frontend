@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <section>
+    <h1>Pokedex 2.0</h1>
+    <div class="buscar-pokemon" >
+      <img id="interrogacao-image" src="./assets/default.gif" />
+      <input id="input-box" type="text" placeholder="Informe o nome do pokemon..."/>
+    </div>
+    <div class="pokemon-box" style="display: none;">
+      <img id="pokemon-image" src="">
+      <h2 id="pokemon-name"></h2>
+      <button id="volar" onclick="reload()">Buscar novamente</button>
+    </div>
+  </section>
+  <audio src="assets/error.mp3" id="error"></audio>
+</body>
+</html>

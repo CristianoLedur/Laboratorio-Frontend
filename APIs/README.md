@@ -2,11 +2,12 @@
 
 ## Proposta do projeto
 
-Resolver uma série de exercícios afim de compreender JSON(JavasSript Object Notation) e APIs(Application Programming Interface). 
+Resolver uma série de exercícios afim de compreender JSON (JavasSript Object Notation) e APIs (Application Programming Interface). 
 
 ## 🚀 Acessando as interfaces
 
-[exercicio02](https://hurt-arch.surge.sh/)
+[exercicio02](https://hurt-arch.surge.sh/) - Link disponível até 02/04<br>
+[exercício03](https://industrious-act.surge.sh/) - Link disponível até 04/04
 
 ## 📝 Licença
 
