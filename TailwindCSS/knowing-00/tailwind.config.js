@@ -14,8 +14,10 @@ module.exports = {
         'very-darkBlue': 'hsl(216 12% 8%)'
       },
       screens: {
-        sm: '375px',
-        xl: '1440px'
+        'sm' : '375px',
+        'medium' : { 'raw' : '(min-width: 376px)' },
+        'xl' : '1440px',
+        'small' : { 'raw' : '(max-width: 374px)'},
       }
     },
   },

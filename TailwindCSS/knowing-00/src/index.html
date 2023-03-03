@@ -13,8 +13,8 @@
   <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
 </head>
 <body class="bg-very-darkBlue h-screen flex">
-  <div class="box-border bg-dark-blue m-auto w-96 h-[340px] rounded-xl p-5">
-    <div class="w-full">
+  <div class="box-border bg-dark-blue m-auto medium:w-96 sm:w-[90%] small:w-[90%] xl:w-96 h-[340px] rounded-xl p-5">
+    <div class="w-full" id="card1">
       <img class="bg-white/5 rounded-full p-3 mb-5" src="assets/icon-star.svg" alt="Icon stars">
       <h1 class="text-white text-2xl font-bold font-sans mb-3 ">How did we do?</h1>
       <p class="text-light-grey font-normal mb-5">
@@ -23,18 +23,18 @@
       </p>
       <div class="flex flex-wrap justify-between">
         <button class="btn hover:btn" onclick="getValue(0)">1</button>
-        <button class="btn" onclick="getValue(1)">2</button>
-        <button class="btn" onclick="getValue(2)">3</button>
-        <button class="btn"  onclick="getValue(3)">4</button>
-        <button class="btn" onclick="getValue(4)">5</button>
-        <button class="bg-orange hover:bg-white hover:text-orange h-12 text-white uppercase font-bold text-2x p-0 text-center tracking-widest w-full mt-5 p-0 rounded-full" id="submit" type="submit">Submit</button>
+        <button class="btn hover:btn" onclick="getValue(1)">2</button>
+        <button class="btn hover:btn" onclick="getValue(2)">3</button>
+        <button class="btn hover:btn"  onclick="getValue(3)">4</button>
+        <button class="btn hover:btn" onclick="getValue(4)">5</button>
+        <button class="bg-orange hover:bg-white hover:text-orange h-12 text-white uppercase font-bold text-2x p-0 text-center tracking-widest w-full my-5 p-0 rounded-full" id="submit" type="submit">Submit</button>
       </div>
     </div>  
-    <div class="hidden w-full flex flex-col">
-      <img class="w-[130px] m-auto my-5" src="assets/illustration-thank-you.svg" alt="Imagem de obrigado">
-      <h2 class="text-orange bg-white/5 px-3 py-1 mx-auto mb-8 w-46 text-[14px] text-center rounded-full">You selected <span id="result"> 5</span> out of 5</h2>
+    <div class="hidden w-full flex flex-col sm:w-full" id="card2">
+      <img class="w-[130px] m-auto my-6" src="assets/illustration-thank-you.svg" alt="Imagem de obrigado">
+      <h2 class="text-orange bg-white/5 px-3 py-1 mx-auto mb-7 w-46 text-[14px] text-center rounded-full">You selected <span id="result"></span> out of 5</h2>
       <h1 class="text-white font-bold  mb-2 text-2xl text-center">Thank you!</h1>
-      <p class="text-medium-grey text-center text-[14px] px-1">We appreciate you taking the time to give a rating. If you ever need more support, 
+      <p class="text-light-grey text-center text-[14px] px-1">We appreciate you taking the time to give a rating. If you ever need more support, 
         don't hesitate to get in touch!
       </p>
     </div>

@@ -437,6 +437,11 @@ html {
   color: white;
 }
 
+.btnActive {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: white;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -535,9 +540,18 @@ html {
   margin: auto;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .my-5 {
@@ -557,8 +571,8 @@ html {
   margin-bottom: 1.25rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
+.mb-7 {
+  margin-bottom: 1.75rem;
 }
 
 .mt-5 {
@@ -589,16 +603,20 @@ html {
   height: 100vh;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-\[130px\] {
   width: 130px;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-\[140px\] {
+  width: 140px;
+}
+
+.w-\[135px\] {
+  width: 135px;
 }
 
 .flex-col {
@@ -705,11 +723,6 @@ html {
   color: hsl(217 12% 63% / var(--tw-text-opacity));
 }
 
-.text-medium-grey {
-  --tw-text-opacity: 1;
-  color: hsl(216 12% 54% / var(--tw-text-opacity));
-}
-
 .text-orange {
   --tw-text-opacity: 1;
   color: hsl(25 97% 53% / var(--tw-text-opacity));
@@ -742,4 +755,32 @@ html {
 .hover\:text-orange:hover {
   --tw-text-opacity: 1;
   color: hsl(25 97% 53% / var(--tw-text-opacity));
+}
+
+@media (min-width: 375px) {
+  .sm\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .xl\:w-96 {
+    width: 24rem;
+  }
+}
+
+@media (min-width: 376px) {
+  .medium\:w-96 {
+    width: 24rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .small\:w-\[90\%\] {
+    width: 90%;
+  }
 }
