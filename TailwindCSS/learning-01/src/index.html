@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TailwindCSS - Praticando</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="prod.css">
+  <script src="script.js" defer></script>
+  <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+</head>
+<body class="bg-gradient-to-b from-soft-violet to-soft-blue h-screen w-screen overflow-hidden sx:overflow-x-auto flex justify-center items-center">
+  <section class="bg-white rounded-xl w-[800px] h-[450px] grid grid-cols-2 sm:grid-cols-1">
+    <div class="relative ">
+      <img class="absolute z-2" src="./assets/illustration-box-desktop.svg" alt="Ilustration box">
+      <img class="absolute z-1" src="./assets/illustration-woman-online-desktop.svg" alt="Ilustration woman online">
+    </div>
+    <div class="flex flex-col justify-center mx-11 ">
+      <!-- https://tailwindcss.com/docs/hover-focus-and-other-states#:~:text=Use%20the%20open%20modifier%20to%20conditionally%20add%20styles%20when%20a%20%3Cdetails%3E%20or%20%3Cdialog%3E%20element%20is%20in%20an%20open%20state%3A -->
+      <h1 class="font-bold text-3xl font-sans py-7 ">FAQ</h1>
+      <details class="question question:hover">
+        <summary>
+          How many team members can I invite?
+        </summary>
+        <div>
+          <p>
+            You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.
+          </p>
+        </div>
+      </details>
+      <details class="question">
+        <summary>
+          What is the maximum file upload size?
+        </summary>
+        <div>
+          <p>
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+        </div>
+      </details>
+
+      <details class="question">
+        <summary >
+          How do I reset my password?
+        </summary>
+        <div>
+          <p>
+            Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+          </p>
+        </div>
+      </details>
+
+
+      <details class="question">
+        <summary>
+          Can I cancel my subscription?
+        </summary>
+        <div>
+          <p>
+            Yes! Send us a message and we'll process your request no questions asked.
+          </p>
+        </div>
+      </details>
+
+      <details class="question">
+        <summary>
+          Do you provide additional support?
+        </summary>
+        <div>
+          <p>
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </p>
+        </div>
+      </details>
+
+
+
+    </div>
+  </section>
+</body>
+</html>

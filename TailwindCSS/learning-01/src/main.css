@@ -1,0 +1,21 @@
+@tailwind base;
+
+p {
+  @apply text-black;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .question {
+    border-bottom: 1px solid hsl(14 88% 65%);
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .question:hover {
+    color: hsl(14 88% 65%);
+  }
+
+}
