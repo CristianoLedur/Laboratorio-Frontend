@@ -430,6 +430,10 @@ video {
   cursor: pointer;
 }
 
+.rotate {
+  transform: rotate(180deg);
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -587,12 +591,16 @@ p {
   display: grid;
 }
 
-.h-\[450px\] {
-  height: 450px;
+.hidden {
+  display: none;
 }
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[230px\] {
+  height: 230px;
 }
 
 .w-2 {
@@ -619,8 +627,20 @@ p {
   width: 100vw;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.w-\[\] {
+  width: ;
+}
+
+.w-\[2\] {
+  width: 2;
+}
+
+.w-\[23\] {
+  width: 23;
+}
+
+.w-\[230\] {
+  width: 230;
 }
 
 .flex-col {
@@ -738,6 +758,10 @@ p {
     margin-bottom: 1.25rem;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:hidden {
     display: none;
   }
@@ -784,8 +808,24 @@ p {
     margin-top: 2.25rem;
   }
 
+  .xl\:block {
+    display: block;
+  }
+
   .xl\:hidden {
     display: none;
+  }
+
+  .xl\:h-\[450px\] {
+    height: 450px;
+  }
+
+  .xl\:h-auto {
+    height: auto;
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:overflow-hidden {
@@ -806,5 +846,9 @@ p {
 
   .xl\:bg-no-repeat {
     background-repeat: no-repeat;
+  }
+
+  .xl\:text-left {
+    text-align: left;
   }
 }

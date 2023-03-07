@@ -18,5 +18,9 @@ p {
     color: hsl(14 88% 65%);
     cursor: pointer;
   }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
   
 }
