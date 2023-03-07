@@ -9,13 +9,14 @@ p {
 
 @layer base {
   .question {
-    border-bottom: 1px solid hsl(14 88% 65%);
+    border-bottom: 1px solid hsl(240 6% 90%);
     width: 100%;
     margin-bottom: 12px;
   }
 
   .question:hover {
     color: hsl(14 88% 65%);
+    cursor: pointer;
   }
-
+  
 }

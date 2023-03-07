@@ -16,9 +16,12 @@ module.exports = {
         'sans': ['Kumbh Sans', 'sans-serif']
       },
       screens: {
-        'xl': { 'raw': '(min-width: 1440px)' },
-        'betwen': {'raw': '(max-width: 1439px)' },
-        'sm': { 'raw': '(max-width: 375px)' }
+        'xl': '1440px',
+        'sm': '375px'
+      },
+      backgroundImage: {
+        'desktop': "url('./assets/bg-pattern-desktop.svg')",
+        'mobile': "url('./assets/bg-pattern-mobile.svg')"
       }
     },
   },

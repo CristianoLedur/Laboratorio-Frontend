@@ -12,73 +12,71 @@
   <script src="script.js" defer></script>
   <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
 </head>
-<body class="bg-gradient-to-b from-soft-violet to-soft-blue h-screen w-screen overflow-hidden sx:overflow-x-auto flex justify-center items-center">
-  <section class="bg-white rounded-xl w-[800px] h-[450px] grid grid-cols-2 sm:grid-cols-1">
-    <div class="relative ">
-      <img class="absolute z-2" src="./assets/illustration-box-desktop.svg" alt="Ilustration box">
-      <img class="absolute z-1" src="./assets/illustration-woman-online-desktop.svg" alt="Ilustration woman online">
+<body class="bg-gradient-to-b from-soft-violet to-soft-blue h-screen w-screen sm:w-[86%] sm:mx-auto overflow-hidden sx:overflow-x-auto flex justify-center items-center">
+  <section class="bg-white rounded-xl w-[800px] h-[450px] sm:h-auto grid grid-cols-2 sm:grid-cols-1">
+    <img class="absolute z-20 top-[373px] left-[210px] w-[160px] sm:hidden " src="./assets/illustration-box-desktop.svg" alt="Ilustration box">
+    <div class="relative xl:overflow-hidden xl:bg-desktop xl:bg-contain xl:bg-[bottom_right_4rem] xl:bg-no-repeat sm:h-[100px] sm:bg-mobile sm:bg-no-repeat sm:bg-center">
+      <img class="relative z-10 top-[60px] left-[-65px] sm:hidden " src="./assets/illustration-woman-online-desktop.svg" alt="Ilustration woman online">
+      <img class="relative z-11 top-[-110px] w-[230px] mx-auto xl:hidden" src="./assets/illustration-woman-online-mobile.svg" alt="Illustration woman mobile size">
     </div>
-    <div class="flex flex-col justify-center mx-11 ">
-      <!-- https://tailwindcss.com/docs/hover-focus-and-other-states#:~:text=Use%20the%20open%20modifier%20to%20conditionally%20add%20styles%20when%20a%20%3Cdetails%3E%20or%20%3Cdialog%3E%20element%20is%20in%20an%20open%20state%3A -->
-      <h1 class="font-bold text-3xl font-sans py-7 ">FAQ</h1>
-      <details class="question question:hover">
-        <summary>
-          How many team members can I invite?
+    <div class="flex flex-col mx-11 xl:mt-9 sm:mx-5 sm:mb-5">
+      <h1 class="font-bold text-3xl font-sans py-7 sm:text-center">FAQ</h1>
+      <details class="question question:hover open:w-auto open:font-bold open:text-black pb-3 ">
+        <summary class="text-sm flex justify-between items-center sm:text-[13px]">
+          <h2 class="">How many team members can I invite?</h2>
+          <img class="w-2.5 mr-2" src="./assets/icon-arrow-down.svg" alt="Icon arrow down">
         </summary>
         <div>
-          <p>
+          <p class="pt-2 font-normal text-dark-blue3 text-[12px]">
             You can invite up to 2 additional users on the Free plan. There is no limit on 
             team members for the Premium plan.
           </p>
         </div>
       </details>
-      <details class="question">
-        <summary>
-          What is the maximum file upload size?
+      <details class="question question:hover open:w-auto open:font-bold open:text-black pb-3">
+        <summary class="text-sm flex justify-between items-center sm:text-[13px]">
+          <h2 class="">What is the maximum file upload size?</h2>
+          <img class="w-2.5 mr-2" src="./assets/icon-arrow-down.svg" alt="Icon arrow down">
         </summary>
         <div>
-          <p>
+          <p class="pt-2 font-normal text-dark-blue3 text-[12px]">
             No more than 2GB. All files in your account must fit your allotted storage space.
           </p>
         </div>
       </details>
-
-      <details class="question">
-        <summary >
-          How do I reset my password?
+      <details class="question question:hover open:w-auto open:font-bold open:text-black pb-3">
+        <summary class="text-sm flex justify-between items-center sm:text-[13px]">
+          <h2>How do I reset my password?</h2>
+          <img class="w-2.5 mr-2" src="./assets/icon-arrow-down.svg" alt="Icon arrow down">
         </summary>
         <div>
-          <p>
+          <p class="pt-2 font-normal text-dark-blue3 text-[12px]">
             Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
           </p>
         </div>
       </details>
-
-
-      <details class="question">
-        <summary>
-          Can I cancel my subscription?
+      <details class="question question:hover open:w-auto open:font-bold open:text-black pb-3">
+        <summary class="text-sm flex justify-between items-center sm:text-[13px]">
+          <h2>Can I cancel my subscription?</h2>
+          <img class="w-2.5 mr-2" src="./assets/icon-arrow-down.svg" alt="Icon arrow down">
         </summary>
         <div>
-          <p>
+          <p class="pt-2 font-normal text-dark-blue3 text-[12px]">
             Yes! Send us a message and we'll process your request no questions asked.
           </p>
         </div>
       </details>
-
-      <details class="question">
-        <summary>
-          Do you provide additional support?
+      <details class="question question:hover open:w-auto open:font-bold open:text-black pb-3">
+        <summary class="text-sm flex justify-between items-center sm:text-[13px]">
+          <h2>Do you provide additional support?</h2>
+          <img class="w-2.5 mr-2" src="./assets/icon-arrow-down.svg" alt="Icon arrow down">
         </summary>
         <div>
-          <p>
+          <p class="pt-2 font-normal text-dark-blue3 text-[12px]">
             Chat and email support is available 24/7. Phone lines are open during normal business hours.
           </p>
         </div>
       </details>
-
-
-
     </div>
   </section>
 </body>
