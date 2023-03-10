@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+@media (max-width: 375px) {
+  html {
+    height: auto;
+    overflow-y: scroll;
+  }
+}
+html body {
+  background-color: #fbfbfb;
+}
+html .header {
+  margin: 0 auto;
+  max-width: 1170px;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+@media (max-width: 375px) {
+  html .header {
+    overflow-y: auto;
+    margin-top: 40px;
+  }
+}
+html .header img {
+  height: 22px;
+  margin-top: 35px;
+}
+html main {
+  margin: 0 auto;
+  max-width: 1170px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+html main .title {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+  text-align: center;
+  font-size: 35px;
+}
+@media (max-width: 375px) {
+  html main .title {
+    font-size: 25px;
+  }
+}
+html main .title span {
+  color: hsl(209, 33%, 12%);
+  font-weight: 700;
+}
+html main .sub-title {
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  color: hsl(209, 33%, 12%);
+  padding: 15px;
+}
+@media (max-width: 375px) {
+  html main .sub-title {
+    font-size: 13px;
+  }
+}
+html main .box {
+  height: 70px;
+  width: 44%;
+  margin: 10px auto;
+  position: relative;
+}
+@media (max-width: 375px) {
+  html main .box {
+    width: 75%;
+    height: auto;
+  }
+}
+html main .box-input-email {
+  width: 66%;
+  height: 40px;
+  padding-left: 22px;
+  border-radius: 40px;
+  border: 1px solid hsl(0, 0%, 59%);
+}
+html main .box-input-email:focus {
+  outline: none;
+  border: 1px solid hsl(354, 100%, 66%);
+}
+@media (max-width: 375px) {
+  html main .box-input-email {
+    width: 100%;
+  }
+  html main .box-input-email::placeholder {
+    padding-left: 0px;
+  }
+}
+html main .box-text-error {
+  display: none;
+  position: absolute;
+  font-weight: 600;
+  font-size: 10px;
+  padding: 5px 0 0 22px;
+  color: hsl(354, 100%, 66%);
+}
+@media (max-width: 375px) {
+  html main .box-text-error {
+    position: relative;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 0.2px;
+  }
+}
+html main .box-input-submit {
+  width: 31.5%;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 40px;
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  color: white;
+  font-weight: 600;
+  margin-left: 8px;
+}
+html main .box-input-submit:hover {
+  background-color: hsl(223, 100%, 88%);
+}
+@media (max-width: 375px) {
+  html main .box-input-submit {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+html main img {
+  width: 700px;
+  margin: 30px auto;
+}
+@media (max-width: 375px) {
+  html main img {
+    width: 85%;
+    margin: 20px auto;
+  }
+}
+html footer {
+  width: 100%;
+  margin: 0 auto 10px;
+}
+@media (max-width: 375px) {
+  html footer {
+    margin: 80px auto 10px;
+  }
+}
+html footer ul {
+  list-style: none;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+@media (max-width: 375px) {
+  html footer ul {
+    gap: 8px;
+  }
+}
+html footer i {
+  color: hsl(223, 87%, 63%);
+  border-radius: 100%;
+  padding: 10px;
+}
+html footer i::before {
+  width: 2px;
+  height: 2px;
+}
+html footer i:hover {
+  background-color: hsl(223, 87%, 63%);
+  color: #fbfbfb;
+}
+@media (max-width: 375px) {
+  html footer i {
+    padding: 5px;
+  }
+}
+html footer p {
+  color: hsl(0, 0%, 59%);
+  text-align: center;
+  font-size: 10px;
+  margin: 20px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

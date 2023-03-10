@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First project SASS</title>
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Style Guide-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Icon Favicon -->
+  <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+  <!-- Script -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <img src="assets/logo.svg" alt="Logo">
+  </header>
+
+  <main>
+    <h1 class="title">We are launching <span>soon!</span></h1>
+    <h3 class="sub-title">Subscribe and get notified</h3>
+    <div class="box">
+      <input class="box-input-email" type="email" name="email" id="email" placeholder="Your email address...">
+      <span class="box-text-error">Please provide a valid email address</span>
+      <input class="box-input-submit" type="submit" name="submit" value="Notify Me" id="submit" onclick="inputSubmit()">
+      </div>
+    <img src="assets/illustration-dashboard.png" alt="Illustration dashboard">
+  </main>
+
+  <footer>
+    <ul class="social-media">
+      <li>
+        <a href="#">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+    <p class="copyright">&copy; Copyright Ping. All rights reserved</p>
+  </footer>
+
+</body>
+</html>

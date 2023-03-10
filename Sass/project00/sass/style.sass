@@ -1,0 +1,174 @@
+@use 'variables'
+@use 'mixins'
+
+* 
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: 'Libre Franklin', sans-serif
+
+html
+  width: 100vw
+  height: 100vh
+  overflow: hidden
+
+  @include mixins.mobile
+    height: auto
+    overflow-y: scroll
+  
+  body
+    background-color: #fbfbfb
+
+
+  .header
+    @include mixins.container
+    height: 100px
+
+    @include mixins.mobile
+      overflow-y: auto
+      margin-top: 40px
+
+    img
+      height: 22px
+      margin-top: 35px
+    
+  main
+    @include mixins.container
+    flex-direction: column
+    justify-content: center
+
+    .title
+      color: variables.$neutral-color-gray
+      font-weight: 300
+      text-align: center
+      font-size: 35px
+    
+      @include mixins.mobile
+        font-size: 25px
+
+      span
+        color: variables.$neutral-color-blue
+        font-weight: 700
+    
+    .sub-title
+      text-align: center
+      font-weight: 300
+      font-size: 15px
+      color: variables.$neutral-color-blue
+      padding: 15px
+
+      @include mixins.mobile
+        font-size: 13px
+    
+    .box
+      height: 70px
+      width: 44%
+      margin: 10px auto
+      position: relative
+
+      @include mixins.mobile
+        width: 75%
+        height: auto
+
+      &-input-email
+        width: 66%
+        height: 40px
+        padding-left: 22px
+        border-radius: 40px
+        border: 1px solid  variables.$neutral-color-gray
+
+        &:focus
+          outline: none
+          border: 1px solid  variables.$secundary-color-red
+
+        @include mixins.mobile
+          width: 100%
+          
+          &::placeholder
+            padding-left: 0px
+
+      &-text-error
+        display: none
+        position: absolute
+        font-weight: 600
+        font-size: 10px
+        padding: 5px 0 0 22px
+        color: variables.$secundary-color-red        
+
+        @include mixins.mobile
+          position: relative
+          width: 100%
+          padding: 5px 0
+          text-align: center
+          font-size: 10px
+          letter-spacing: 0.2px
+      
+      &-input-submit
+        width: 31.5%
+        cursor: pointer
+        height: 40px
+        border-radius: 40px
+        background-color: variables.$primary-color
+        border: none
+        color: white
+        font-weight: 600
+        margin-left: 8px 
+
+        &:hover
+          background-color: variables.$secundary-color-blue
+
+        @include mixins.mobile
+          width: 100%
+          margin: 10px 0
+
+    img
+      width: 700px
+      margin: 30px auto
+
+      @include mixins.mobile
+        width: 85%
+        margin: 20px auto
+
+  footer
+    width: 100%
+    margin: 0 auto 10px
+    @include mixins.mobile
+      margin: 80px auto 10px
+
+    ul
+      list-style: none
+      width: auto
+      display: flex
+      justify-content: center
+      gap: 12px
+
+      @include mixins.mobile
+        gap: 8px
+      
+    i
+      color: variables.$primary-color
+      border-radius: 100%
+      padding: 10px
+      
+      &::before
+        width: 2px
+        height: 2px
+
+      &:hover
+        background-color: variables.$primary-color
+        color: #fbfbfb
+
+      @include mixins.mobile
+        padding: 5px
+
+    p
+      color: variables.$neutral-color-gray
+      text-align: center
+      font-size: 10px
+      margin: 20px 0
+
+      
+
+    
+
+    
